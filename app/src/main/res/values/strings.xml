@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MapsMe Exchange Helper</string>
+    <string name="tariff_index">1</string>
+    <string name="currency_index">43</string>
 </resources>
