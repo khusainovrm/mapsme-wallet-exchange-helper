@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         JsonObjectRequest stringRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
-            @SuppressLint("DefaultLocale")
+
             @Override
             public void onResponse(JSONObject response) {
 
@@ -321,6 +321,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(this, "Enter amount", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        TextView answer = findViewById(R.id.answer);
+        answer.setText("Loading...");
 
         hideKeyboard(this);
         sendRequest();

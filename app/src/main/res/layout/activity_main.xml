@@ -6,92 +6,95 @@
         android:layout_height="match_parent"
         tools:context=".activities.MainActivity">
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="16dp"
-            android:padding="16dp">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-                android:text="Your plan"
+        <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"
-                android:gravity="center" />
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="16dp">
 
-        <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/spinnerTariff" />
+            <TextView
+                    android:text="Your plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:gravity="center" />
 
-        <TextView
-                android:text="Transaction currency"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:gravity="center" />
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/spinnerTariff" />
 
-        <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/spinnerCurrency" />
+            <TextView
+                    android:text="Transaction currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:gravity="center" />
 
-        <TextView
-                android:text="Transaction amount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:gravity="center" />
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/spinnerCurrency" />
 
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/editTextNumber"
-                android:singleLine="true"
-                android:imeOptions="actionDone" />
+            <TextView
+                    android:text="Transaction amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:gravity="center" />
 
-        <CheckBox
-                android:text="International Fee"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/internationalFeeCheckbox"
-                android:checked="true" />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextNumber"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone" />
 
-        <CheckBox
-                android:text="ATM Withdrawal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/checkBoxAtm" />
+            <CheckBox
+                    android:text="International Fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/internationalFeeCheckbox"
+                    android:checked="true" />
 
-        <Button
-                android:text="Calcucate!"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/calculate"
-                android:onClick="calculate" />
+            <CheckBox
+                    android:text="ATM Withdrawal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxAtm" />
 
-        <TextView
-                android:text="DISCLAIMER: exchange rates are approximate, but as close as possible to real ones. Service is not affiliated with maps.me"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4"
-                android:textAlignment="center" />
+            <Button
+                    android:text="Calcucate!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/calculate"
+                    android:onClick="calculate" />
 
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/answer"
-                android:textStyle="bold"
-                android:textSize="24sp"
-                android:textAlignment="center"
-                android:layout_marginTop="16dp" />
+            <TextView
+                    android:text="DISCLAIMER: exchange rates are approximate, but as close as possible to real ones. Service is not affiliated with maps.me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:textAlignment="center" />
 
-    </LinearLayout>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/answer"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
